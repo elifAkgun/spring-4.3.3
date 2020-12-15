@@ -12,13 +12,20 @@ import lombok.Setter;
 @RequiredArgsConstructor
 public class Organization {
 
-	@NonNull
-	private String companyName;
-	@NonNull
-	private Integer yearOfIncorporation;
-	private String postalCode;
-	private int employeeCount;
-	private String slogan;
-	private BusinessService businessService;
-	 
+    @NonNull
+    private String companyName;
+    @NonNull
+    private Integer yearOfIncorporation;
+    private String postalCode;
+    private int employeeCount;
+    private String slogan;
+    private BusinessService businessService;
+
+    public void initialize() {
+        System.out.println("Organization : initialize method called.");
+    }
+
+    public void destroy() {
+        System.out.println("Organization : destroy method called.");
+    }
 }
