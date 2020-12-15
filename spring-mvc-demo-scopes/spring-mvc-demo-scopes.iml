@@ -8,6 +8,7 @@
           <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring-dispatcher-servlet.xml</file>
           <file>file://$MODULE_DIR$/resources/beans-static-factory.xml</file>
           <file>file://$MODULE_DIR$/resources/beans-instance-factory.xml</file>
+          <file>file://$MODULE_DIR$/resources/beans-namespace-c.xml</file>
         </fileset>
       </configuration>
     </facet>
