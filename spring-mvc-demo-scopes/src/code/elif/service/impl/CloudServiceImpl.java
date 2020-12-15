@@ -13,5 +13,11 @@ public class CloudServiceImpl implements BusinessService {
 				"\nThe annual income exceeds "+ random.nextInt(revenue) + " dollars.";
 		return service;
 	}
-	
+	public void postConstruct() {
+		System.out.println("CloudServiceImpl : postConstruct  method called.");
+	}
+
+	public void preDestroy() {
+		System.out.println("CloudServiceImpl : preDestroy method called.");
+	}
 }

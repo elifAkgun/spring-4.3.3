@@ -21,11 +21,20 @@ public class Organization {
     private String slogan;
     private BusinessService businessService;
 
-    public void initialize() {
-        System.out.println("Organization : initialize method called.");
+//    public void initialize() {
+//        System.out.println("Organization : initialize method called.");
+//    }
+//
+//    public void destroy() {
+//        System.out.println("Organization : destroy method called.");
+//    }
+
+
+    public void postConstruct() {
+        System.out.println("Organization : postConstruct  method called.");
     }
 
-    public void destroy() {
-        System.out.println("Organization : destroy method called.");
+    public void preDestroy() {
+        System.out.println("Organization : preDestroy method called.");
     }
 }
