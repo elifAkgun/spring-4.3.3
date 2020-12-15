@@ -12,4 +12,11 @@
           class="code.elif.model.Organization" c:companyName="BMW" c:yearOfIncorporation="1929">
     </bean>
 
+    <bean id="myOrgWithData"
+          class="code.elif.model.OrganizationWithData" c:companyName="BMW" c:yearOfIncorporation="1929"
+          c:data-ref="data">
+    </bean>
+    <bean id="data"
+          class="code.elif.model.Data" c:id="1" c:name="test data">
+    </bean>
 </beans>

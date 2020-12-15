@@ -3,16 +3,13 @@ package code.elif.model;
 
 import java.time.LocalDate;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @RequiredArgsConstructor
+@ToString
 public class Data {
 	
 	@NonNull
@@ -20,7 +17,5 @@ public class Data {
 	
 	@NonNull
 	private String  name;
-	
-	private LocalDate date;
 
 }
