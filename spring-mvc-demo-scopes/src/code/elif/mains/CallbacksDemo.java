@@ -12,6 +12,8 @@ public class CallbacksDemo {
 
         Organization organization = (Organization) applicationContext.getBean("myOrg");
 
-        ((ClassPathXmlApplicationContext)applicationContext).close();
+         System.out.println(organization);
+
+         ((ClassPathXmlApplicationContext)applicationContext).close();
     }
 }

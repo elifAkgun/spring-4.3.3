@@ -6,6 +6,8 @@
         <fileset id="fileset" name="Spring Application Context" removed="false">
           <file>file://$MODULE_DIR$/resources/beans-cp.xml</file>
           <file>file://$MODULE_DIR$/WebContent/WEB-INF/spring-dispatcher-servlet.xml</file>
+          <file>file://$MODULE_DIR$/resources/beans-static-factory.xml</file>
+          <file>file://$MODULE_DIR$/resources/beans-instance-factory.xml</file>
         </fileset>
       </configuration>
     </facet>

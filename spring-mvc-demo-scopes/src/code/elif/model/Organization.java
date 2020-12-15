@@ -1,15 +1,13 @@
 package code.elif.model;
 
 import code.elif.service.BusinessService;
-import lombok.Getter;
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 
 @Getter
 @Setter
 @RequiredArgsConstructor
+@ToString
 public class Organization {
 
     @NonNull
@@ -36,5 +34,10 @@ public class Organization {
 
     public void preDestroy() {
         System.out.println("Organization : preDestroy method called.");
+    }
+
+    public static Organization createInstanceStaticWay(String companyName,Integer yearOfIncorporation){
+        System.out.println("Organization : createInstanceStaticWay method called.");
+        return new Organization(companyName,yearOfIncorporation);
     }
 }
