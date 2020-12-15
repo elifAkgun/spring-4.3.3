@@ -13,3 +13,6 @@ buildNumber.properties
 .classpath
 .project
 .springBeans
+spring-mvc-demo/.idea/
+spring-mvc-demo-scopes/.idea/
+.DS_Store

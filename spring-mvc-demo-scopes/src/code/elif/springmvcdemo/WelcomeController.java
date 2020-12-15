@@ -11,7 +11,7 @@ import code.elif.model.Organization;
 @Controller
 public class WelcomeController {
 
-	@RequestMapping("/")
+	@RequestMapping("/welcome")
 	public String doWelcome(Model model) {
 		// create the application context (container)
 		ApplicationContext ctx = new ClassPathXmlApplicationContext("beans-cp.xml");
