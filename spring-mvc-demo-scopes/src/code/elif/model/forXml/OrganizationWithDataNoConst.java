@@ -1,6 +1,5 @@
-package code.elif.model;
+package code.elif.model.forXml;
 
-import code.elif.service.BusinessService;
 import lombok.*;
 
 
@@ -8,14 +7,14 @@ import lombok.*;
 @Setter
 @RequiredArgsConstructor
 @ToString
-public class OrganizationWithData {
+public class OrganizationWithDataNoConst {
 
     @NonNull
     private String companyName;
     @NonNull
     private Integer yearOfIncorporation;
     @NonNull
-    private Data data;
+    private DataNoConst dataNoConst;
 
 
     public void postConstruct() {

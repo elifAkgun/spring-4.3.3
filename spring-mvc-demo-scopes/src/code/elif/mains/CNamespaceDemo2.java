@@ -1,7 +1,6 @@
 package code.elif.mains;
 
-import code.elif.model.Organization;
-import code.elif.model.OrganizationWithData;
+import code.elif.model.forXml.OrganizationWithData;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

@@ -1,6 +1,6 @@
 package code.elif.model.factory;
 
-import code.elif.model.Organization;
+import code.elif.model.forXml.Organization;
 
 public class OrganizationFactory {
 

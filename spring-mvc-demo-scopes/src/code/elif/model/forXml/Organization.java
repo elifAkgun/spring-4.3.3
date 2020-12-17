@@ -1,4 +1,4 @@
-package code.elif.model;
+package code.elif.model.forXml;
 
 import code.elif.service.BusinessService;
 import lombok.*;

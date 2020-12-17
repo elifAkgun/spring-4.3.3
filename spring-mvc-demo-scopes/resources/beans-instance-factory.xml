@@ -7,7 +7,7 @@
 
 
     <bean id="myOrg"
-          class="code.elif.model.Organization"
+          class="code.elif.model.forXml.Organization"
           factory-bean="orgFactory">
         <constructor-arg value="Amazon" name="companyName"></constructor-arg>
         <constructor-arg value="1994" name="yearOfIncorporation"></constructor-arg>

@@ -1,7 +1,4 @@
-
-package code.elif.model;
-
-import java.time.LocalDate;
+package code.elif.model.forXml;
 
 import lombok.*;
 
