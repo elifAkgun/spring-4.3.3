@@ -5,11 +5,20 @@ import code.elif.model.withAnnotation.ConsumerProduct;
 import code.elif.model.withAnnotation.IndustrialProduct;
 import org.springframework.beans.factory.annotation.Autowired;
 
+
 public class TradeFair {
 
+
 	private IndustrialProduct industrialProduct;
+
 	private ConsumerProduct consumerProduct;
-	
+
+	@Autowired
+	public TradeFair(IndustrialProduct industrialProduct, ConsumerProduct consumerProduct) {
+		this.industrialProduct = industrialProduct;
+		this.consumerProduct = consumerProduct;
+	}
+
 	public int declareIndustrialProductPrice(IndustrialProduct industrialProduct) {
 		return industrialProduct.calculatePrice();
 	}
@@ -25,13 +34,4 @@ public class TradeFair {
 		return priceInfo;
 	}
 
-	@Autowired
-	public void setIndustrialProduct(IndustrialProduct industrialProduct) {
-		this.industrialProduct = industrialProduct;
-	}
-
-	@Autowired
-	public void setConsumerProduct(ConsumerProduct consumerProduct) {
-		this.consumerProduct = consumerProduct;
-	}
 }
