@@ -4,8 +4,9 @@ package code.elif.model.withAnnotation.promotion;
 import code.elif.model.withAnnotation.ConsumerProduct;
 import code.elif.model.withAnnotation.IndustrialProduct;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
-
+@Component("myFair")
 public class TradeFair {
 
 

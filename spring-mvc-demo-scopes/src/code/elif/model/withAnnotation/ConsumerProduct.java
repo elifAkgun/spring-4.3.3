@@ -1,7 +1,10 @@
 package code.elif.model.withAnnotation;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Random;
 
+@Component
 public class ConsumerProduct extends GenericProduct {
 
 	@Override
